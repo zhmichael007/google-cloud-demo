@@ -1,0 +1,4 @@
+DateTime==4.3
+pytz==2020.1
+six==1.15.0
+zope.interface==5.1.0
