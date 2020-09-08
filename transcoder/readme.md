@@ -5,7 +5,7 @@ gcloud auth activate-service-account --key-file your-service-key
 
 # Post and get a template id:
 
-TOKEN=`gcloud auth print-access-token`
+TOKEN=``gcloud auth print-access-token``
 
 curl -X POST "https://transcoder.googleapis.com/v1beta1/projects/280272749669/locations/us-central1/jobTemplates?jobTemplateId=vp9-bilibili" -H "Authorization: Bearer ${TOKEN?}" -H "Content-Type: application/json"  -d @transcode-template-bilibili-vp9.json
 
