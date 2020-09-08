@@ -1,0 +1,3509 @@
+gs://zhmichael1-bucket/video/input/y4m/
+gs://zhmichael1-bucket/transcode_output/bilibili/y4m/vp9audio/202002801/
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/c8eff1063f0e115d86b10918b0a0ec24",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G01animation_1920x1080_8bit420_24_833.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G01animation_1920x1080_8bit420_24_833/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/8140fe8209080bf0c3cec983eeeb79eb",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G04cemetryR_1920x1080_8bit420_25_999.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G04cemetryR_1920x1080_8bit420_25_999/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/2f74afcb7316a510b24b57bc85ad5191",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G08coffeeRC_1920x1080_8bit420_25_1005.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G08coffeeRC_1920x1080_8bit420_25_1005/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/7e8ec619ff98f1b0c1be8cabb685a01a",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G09colortuneC_1920x1080_8bit420_25_1049.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G09colortuneC_1920x1080_8bit420_25_1049/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/b98dfd98a9713710cc54c7a477723731",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G11disneylandR_1920x1080_8bit420_24_317.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G11disneylandR_1920x1080_8bit420_24_317/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/3b4f9cfc6d3b51a18e0233cfdd82f8d2",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G13forestdogC_2048x1080_8bit420_25_976.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G13forestdogC_2048x1080_8bit420_25_976/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/0515137c6c2f3c1ab7b16754f13987ef",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G14fountainR_1920x1080_8bit420_25_516.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G14fountainR_1920x1080_8bit420_25_516/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/5e97faeb4478014bd4d481cca2e24fa6",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G15gilmourC_1920x1080_8bit420_30_957.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G15gilmourC_1920x1080_8bit420_30_957/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/96efb0660135cc1de31dfebc986b241a",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G16houseC_1920x1080_8bit420_25_1007.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G16houseC_1920x1080_8bit420_25_1007/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/f5f6d14a9d4b4ce5ea09def2339f3532",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G17infinit_1920x1080_8bit420_25_258.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G17infinit_1920x1080_8bit420_25_258/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/ef7f11f64ba6efa9295ac4cb56ca38c1",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G19italianC_1920x1080_8bit420_24_989.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G19italianC_1920x1080_8bit420_24_989/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/09991b2f71f73944438aa80a4138bbc5",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G20bikeC_1920x1080_8bit420_24_1063.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G20bikeC_1920x1080_8bit420_24_1063/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/8f0557cb1662b47ae95f8209343400fd",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G21votersC_1920x1080_8bit420_25_997.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G21votersC_1920x1080_8bit420_25_997/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/cc22f05eb81c714d3eccaa77966d47b4",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G22roadC_1920x1080_8bit420_24_999.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G22roadC_1920x1080_8bit420_24_999/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/18975202cd94a087b877c3106db6c5bb",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G28steadicamRC_1920x1080_8bit420_24_979.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G28steadicamRC_1920x1080_8bit420_24_979/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/1227564f114df2ec00f7ed3fb6f872e6",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G29twinC_1920x1080_8bit420_25_1026.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G29twinC_1920x1080_8bit420_25_1026/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/d6f2e9bcd8af88c4fefbf03ff58a5cd8",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G30weddingC_1920x1080_8bit420_24_948.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G30weddingC_1920x1080_8bit420_24_948/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/05ebc3d86caf58c0d3e46721e216ed8a",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/G31ziguinchorC_1920x1080_8bit420_25_994.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/G31ziguinchorC_1920x1080_8bit420_25_994/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/6f9f495c7b3971061091f19c0feacb2f",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/I01overwatch_1920x1080_8bit420_60_1200.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/I01overwatch_1920x1080_8bit420_60_1200/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/7dc11104d66e0cb2dae7de54df83b68e",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/I04cartoon_1920x1080_8bit420_60_1200.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/I04cartoon_1920x1080_8bit420_60_1200/"
+    }
+  }
+}
+{
+  "name": "projects/280272749669/locations/us-central1/jobs/244a653b91bda8393e9737bdea28d343",
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+        "uri": "gs://zhmichael1-bucket/video/input/y4m/l05motorvlog_1920x1080_8bit420_30_1000.y4m"
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ],
+        "startTimeOffset": "0s"
+      }
+    ],
+    "elementaryStreams": [
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream0"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 700000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream1"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 1400000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream2"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 2100000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream3"
+      },
+      {
+        "videoStream": {
+          "codec": "vp9",
+          "profile": "high",
+          "preset": "veryfast",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "pixelFormat": "yuv420p",
+          "bitrateBps": 4200000,
+          "rateControlMode": "vbr",
+          "enableTwoPass": true,
+          "crfLevel": 21,
+          "vbvSizeBits": 18000000,
+          "vbvFullnessBits": 16200000,
+          "gopDuration": "5s",
+          "entropyCoder": "cabac",
+          "frameRate": 50
+        },
+        "key": "video-stream4"
+      }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "fileName": "400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "fileName": "700-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "fileName": "1400-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "fileName": "2100-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "fileName": "4200-kbps-mp4.mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4"
+        ]
+      }
+    ],
+    "output": {
+      "uri": "gs://zhmichael1-bucket/transcode_output/y4m/2020082801/l05motorvlog_1920x1080_8bit420_30_1000/"
+    }
+  }
+}

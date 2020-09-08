@@ -1,0 +1,181 @@
+{
+  "config": {
+    "inputs": [
+      {
+        "key": "input0",
+      }
+    ],
+    "editList": [
+      {
+        "key": "atom0",
+        "inputs": [
+          "input0"
+        ]
+      },
+      {
+        "key":"atom2",
+        "inputs":[
+           "input0"
+        ]
+     }
+    ],
+    "elementaryStreams": [
+      {
+        "key": "video-stream0",
+        "videoStream": {
+          "codec": "vp9",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "bitrateBps": 400000,
+          "frameRate": 50,
+          "enableTwoPass": true,
+          "gopDuration": "5s",
+          "vbvSizeBits": 18000000,
+        }
+      },
+      {
+        "key": "video-stream1",
+        "videoStream": {
+          "codec": "vp9",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "bitrateBps": 700000,
+          "frameRate": 50,
+          "enableTwoPass": true,
+          "gopDuration": "5s",
+          "vbvSizeBits": 18000000,
+        }
+      },
+      {
+        "key": "video-stream2",
+        "videoStream": {
+          "codec": "vp9",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "bitrateBps": 1400000,
+          "frameRate": 50,
+          "enableTwoPass": true,
+          "gopDuration": "5s",
+          "vbvSizeBits": 18000000,
+        }
+      },
+      {
+        "key": "video-stream3",
+        "videoStream": {
+          "codec": "vp9",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "bitrateBps": 2100000,
+          "frameRate": 50,
+          "enableTwoPass": true,
+          "gopDuration": "5s",
+          "vbvSizeBits": 18000000,
+        }
+      },
+      {
+        "key": "video-stream4",
+        "videoStream": {
+          "codec": "vp9",
+          "heightPixels": 1080,
+          "widthPixels": 1920,
+          "bitrateBps": 4200000,
+          "frameRate": 50,
+          "enableTwoPass": true,
+          "gopDuration": "5s",
+          "vbvSizeBits": 18000000,
+        }
+      },
+      {
+        "audioStream":{
+           "codec":"aac",
+           "bitrateBps":64000,
+           "channelCount":1,
+           "channelLayout": [
+               "fl"
+             ],
+           "mapping":[
+              {
+                 "key":"atom0",
+                 "channels":[
+                    {
+                       "inputs":[
+                          {
+                             "key":"input0",
+                             "track":1,
+                             "channel":0,
+                             "gainDb":0
+                          }
+                       ]
+                    }
+                 ]
+              },
+              {
+                 "key":"atom2",
+                 "channels":[
+                    {
+                       "inputs":[
+                          {
+                             "key":"input0",
+                             "track":1,
+                             "channel":0,
+                             "gainDb":0
+                          }
+                       ]
+                    }
+                 ]
+              }
+           ],
+           "sampleRateHertz":48000
+        },
+        "key":"audio-stream0"
+     }
+    ],
+    "muxStreams": [
+      {
+        "key": "400-kbps-mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream0",
+          "audio-stream0"
+        ]
+      },
+      {
+        "key": "700-kbps-mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream1",
+          "audio-stream0"
+        ]
+      },
+      {
+        "key": "1400-kbps-mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream2",
+          "audio-stream0"
+        ]
+      },
+      {
+        "key": "2100-kbps-mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream3",
+          "audio-stream0"
+        ]
+      },
+      {
+        "key": "4200-kbps-mp4",
+        "container": "mp4",
+        "elementaryStreams": [
+          "video-stream4",
+          "audio-stream0"
+        ]
+      },
+    ],
+    "manifests": [
+      
+    ],
+    "output": {
+    }
+  }
+}
