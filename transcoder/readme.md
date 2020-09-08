@@ -14,7 +14,7 @@ curl -X GET https://transcoder.googleapis.com/v1beta1/projects/280272749669/loca
 280272749669 is the project number, and replace us-central1 to the region you want to use.
 
 # View Job Status:
-curl -X GET https://transcoder.googleapis.com/v1beta1/projects/280272749669/locations/us-central1/jobs/244a653b91bda8393e9737bdea28d343 -H "Authorization: Bearer `gcloud auth print-access-token`"
+curl -X GET https://transcoder.googleapis.com/v1beta1/projects/280272749669/locations/us-central1/jobs/244a653b91bda8393e9737bdea28d343 -H "Authorization: Bearer \`gcloud auth print-access-token\`"
 
 # Count the total frames:
 https://stackoverflow.com/questions/2017843/fetch-frame-count-with-ffmpeg
