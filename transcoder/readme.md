@@ -11,6 +11,7 @@ curl -X POST "https://transcoder.googleapis.com/v1beta1/projects/280272749669/lo
 
 curl -X GET https://transcoder.googleapis.com/v1beta1/projects/280272749669/locations/us-central1/jobTemplates/vp9-bilibili -H "Authorization: Bearer ${TOKEN?}"
 
+280272749669 is the project number, and replace us-central1 to the region you want to use.
 
 # View Job Status:
 curl -X GET https://transcoder.googleapis.com/v1beta1/projects/280272749669/locations/us-central1/jobs/244a653b91bda8393e9737bdea28d343 -H "Authorization: Bearer `gcloud auth print-access-token`"
