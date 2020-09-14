@@ -1,5 +1,5 @@
 # Configuration Steps in Google Cloud Document:
-[GCP setup](https://cloud.google.com/cdn/docs/using-signed-urls)
+[URL Link](https://cloud.google.com/cdn/docs/using-signed-urls)
 
 # GCP cloud CDN sign URLs and cookies
 
