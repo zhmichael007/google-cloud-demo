@@ -20,7 +20,7 @@ bash create_bq_load_audit.sh
 顺利的话，可以在audit2这个dataset里看到以下table和view，稍微等会表格中会自动导入数据
 
 打开https://datastudio.google.com/reporting/5a574063-6f27-4938-a4eb-67a7edc0bc3f
-（可能需要我添加授权）
+（需要把账户邮箱给我添加view权限=）
 
 点击创建副本
 
