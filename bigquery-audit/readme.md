@@ -1,6 +1,7 @@
 在Cloud Shell里或者自己设置的GCP Command Line环境里执行以下语句，直接用Project Admin权限：
 
 export PROJECT=zhmichael1
+
 export DATASET=audit2
 
 （以上两个变量为project名称和数据集的名称，可以根据自己的环境修改）
