@@ -14,6 +14,7 @@ gcloud --project $PROJECT logging sinks create bigquery-audit-2 bigquery.googlea
 
 
 bash create_bq_query_audit.sh
+
 bash create_bq_load_audit.sh
 
 顺利的话，可以在audit2这个dataset里看到以下table和view，稍微等会表格中会自动导入数据
