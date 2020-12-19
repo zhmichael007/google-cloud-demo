@@ -8,12 +8,12 @@ export DATASET=audit2
 
 bq --project_id $PROJECT mk $DATASET
 
-![image](https://github.com/zhmichael007/google-cloud-demo/bigquery-audit/image/bq-qudit-1.png)
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/bigquery-audit/image/bq-qudit-1.png)
 
 gcloud --project $PROJECT logging sinks create bigquery-audit-2 bigquery.googleapis.com/projects/$PROJECT/datasets/$DATASET --log-filter resource.type="bigquery_resource"
 
 可以按照上面命令行输出的service account的名称，加到该dataset的Edit permission里面
-![image](https://github.com/zhmichael007/google-cloud-demo/edit/master/bigquery-audit/image/bq-qudit-2.png)
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/bigquery-audit/image/bq-qudit-2.png)
 ![image](https://github.com/zhmichael007/google-cloud-demo/edit/master/bigquery-audit/image/bq-qudit-3.png)
 
 bash create_bq_query_audit.sh
