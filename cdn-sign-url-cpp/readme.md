@@ -10,7 +10,7 @@ sudo cp *.so.3 /usr/lib/
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/3.png)  
 
 在sign_url.cpp中，设置自己需要签名的URL路径，设置在Google Cloud CDN中设置的签名key name和key value：
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/2.png)  
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/1.png)  
 
 在目录下修改Makefile 然后make，生成signurl可执行程序，运行signurl
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/2.png)  
