@@ -1,5 +1,8 @@
 - 注意：该代码为C++实现的Google Cloud CDN 签名URL的prototype，个人兴趣开发，不保证没有问题。生成场景使用之前请严格测试！
-
+```diff
++ green color text
+- red color text
+```
 
 该代码在Debain下运行通过  
 
