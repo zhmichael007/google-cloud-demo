@@ -13,4 +13,4 @@ sudo cp *.so.3 /usr/lib/
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/2.png)  
 
 在目录下修改Makefile 然后make，生成signurl可执行程序，运行signurl
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/1.png)  
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/2.png)  
