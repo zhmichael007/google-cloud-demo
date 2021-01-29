@@ -14,3 +14,5 @@ sudo cp *.so.3 /usr/lib/
 
 在目录下修改Makefile 然后make，生成signurl可执行程序，运行signurl
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/2.png)  
+
+注意：该代码为C++实现的Google Cloud CDN 签名URL的prototype，不保没有问题。使用之前请严格测试！
