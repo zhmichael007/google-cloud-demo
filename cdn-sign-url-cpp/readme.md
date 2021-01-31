@@ -8,7 +8,7 @@
 - sudo apt-get install wget -y
 - wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz
 - tar -zxvf openssl-1.1.1i.tar.gz
-- cd cd openssl-1.1.1i
+- cd openssl-1.1.1i
 - 运行 ./config   
 - sudo make install   
 - sudo cp *.so.3 /usr/lib/  
