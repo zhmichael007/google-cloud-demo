@@ -4,9 +4,12 @@
 
 该代码在Debain下运行通过  
 
-代码中hmac-sha1的签名依赖openssl的lib实现，所以需要下载编译openssl的库：   
-- git clone git://git.openssl.org/openssl.git   
-- 进入openssl目录，运行 ./config   
+代码中hmac-sha1的签名依赖openssl的lib实现，所以需要下载编译openssl 1.1.1的库：   
+- sudo apt-get install wget -y
+- wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz
+- tar -zxvf openssl-1.1.1i.tar.gz
+- cd cd openssl-1.1.1i
+- 运行 ./config   
 - sudo make install   
 - sudo cp *.so.3 /usr/lib/  
 
