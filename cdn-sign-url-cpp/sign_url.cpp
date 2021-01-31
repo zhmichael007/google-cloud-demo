@@ -1,8 +1,4 @@
-/*
-THis code dependcy on openssl lib, apt-get install openssl
-*/
-
-
+//modify it according to your environment
 #define FILE_URL "http://34.117.201.214/1.png"
 #define CDN_KEY_NAME "cdn-sign-key-1"
 #define CDN_KEY_VALUE "2jymkR0hUiasu3Kqtr1dCA=="
