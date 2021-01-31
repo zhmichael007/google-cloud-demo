@@ -10,8 +10,7 @@
 - tar -zxvf openssl-1.1.1i.tar.gz
 - cd openssl-1.1.1i
 - 运行 ./config   
-- sudo make install   
-- sudo cp *.so.3 /usr/lib/  
+- sudo make install 
 
 在Google Cloud Load Balancing的管理控制台上，设置签名URL的key：
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/3.png)  
