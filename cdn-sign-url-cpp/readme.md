@@ -1,3 +1,6 @@
+Google Cloud CDN signed URLs的官方链接（需翻墙访问）
+https://cloud.google.com/cdn/docs/using-signed-urls
+
 ```diff
 - 注意：该代码为C++实现的Google Cloud CDN 签名URL的prototype，个人兴趣开发，不保证没有问题。生成场景使用之前请严格测试！
 ```
@@ -22,4 +25,6 @@
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/2.png)  
 
 
-
+备注：  
+https://github.com/zhmichael007/google-cloud-demo/tree/master/cdn-sigh-url  
+以上为python的实现方案，可以用来验证C++写的sign URL是否正确  
