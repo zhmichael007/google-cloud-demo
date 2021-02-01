@@ -5,7 +5,7 @@ https://cloud.google.com/cdn/docs/using-signed-urls
 https://github.com/zhmichael007/google-cloud-demo/tree/master/cdn-sigh-url  
 
 ```diff
-- 注意：该代码为C++实现的Google Cloud CDN 签名URL的prototype，个人兴趣开发，不保证没有问题。生成场景使用之前请严格测试！
+- 注意：该代码为C++实现的Google Cloud CDN 签名URL的prototype，个人兴趣开发，不保证没有问题。生产场景使用之前请严格测试！
 ```
 
 该代码在Debain下运行通过  
