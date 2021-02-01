@@ -1,4 +1,4 @@
-Google Cloud CDN signed URLs的官方链接（需翻墙访问）
+Google Cloud CDN signed URLs使用说明的官方链接（需翻墙访问）
 https://cloud.google.com/cdn/docs/using-signed-urls
 
 另外可以参考Python的实现方案，用来验证C++写的sign URL是否正确  
