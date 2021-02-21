@@ -49,10 +49,10 @@ public class ChangeDataSender implements Runnable {
         props.setProperty("offset.storage.file.filename", "/tmp/offsets.dat");
         props.setProperty("offset.flush.interval.ms", "1000");
         /* begin connector properties */
-        props.setProperty("database.hostname", "35.229.220.64");
+        props.setProperty("database.hostname", "192.168.0.128");
         props.setProperty("database.port", "3306");
         props.setProperty("database.user", "root");
-        props.setProperty("database.password", "NikonZ71978*");
+        props.setProperty("database.password", "GoogleCloudDemo123*");
         props.setProperty("database.server.id", "1");
         props.setProperty("database.server.name", "test");
         props.setProperty("database.history", "io.debezium.relational.history.FileDatabaseHistory");
