@@ -63,26 +63,26 @@ mvn exec:java
 
 # Demo
 ### Demo1: History Data Migration:
-There are 2 databases, named testdb1 and testdb2:
+There are 2 databases, named testdb1 and testdb2:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png" width="60%">
 
-Start the Debezium application, will see the historic data is outputed, it will be inserted to BigQuery:
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png" width="60%">
+Start the Debezium application, will see the historic data is outputed, it will be inserted to BigQuery:  
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png" width="80%">
 
-Check the raw_data table in BigQuery:
+Check the raw_data table in BigQuery:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png" width="60%">
 
-You can use a view to parse the real table from raw_data:
+You can use a view to parse the real table from raw_data:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/view.png" width="60%">
 
 ### Demo2: CDC
-Execute Insert, Update and Delete operation in mysql client:
+Execute Insert, Update and Delete operation in mysql client:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_mysql_op.png" width="60%">
 
-Will see the output of the Debezium application with INSERT, UPDATE and DELETE:
+Will see the output of the Debezium application with INSERT, UPDATE and DELETE:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_app_output.png" width="60%">
 
-Check the raw_data table in BigQuery:
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png" width="60%">
+Check the raw_data table in BigQuery:  
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png" width="60%">  
 
 You need to merge the data from raw_data table to destination table according to the operation INSERT, UPDATE and DELETE 
