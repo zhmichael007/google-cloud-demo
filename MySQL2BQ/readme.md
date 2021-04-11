@@ -4,6 +4,9 @@ The customized debezium connector can work as a unified platform for history dat
 is added in MySQL. BigQuery will work as a data lake and collect the raw data, and transfer the raw data to table by using SQL script.  
 The information about Debezium please refer to: [debezium]
 
+# Architecture:
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/arch.png" width="60%">
+
 # Authentication
 
 See the [Authentication][authentication], you need to set Pub/Sub Publisher and BigQuery User priviledge in the Service Account. 
