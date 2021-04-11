@@ -21,5 +21,5 @@ mvn exec:java
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
 ## Create BigQuery raw data table:
 ```java
-bq mk --table zhmichael1:debezium_cdc.raw_data_2 ./raw_data.json
+bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
