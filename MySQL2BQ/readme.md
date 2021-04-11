@@ -11,7 +11,7 @@ See the [Authentication][authentication], you need to set Pub/Sub Publisher and 
 ### In a Google Debain VM:
 ```java
 sudo apt update
-sudo apt install maven git -y
+sudo apt install maven git wget -y
 git clone https://github.com/zhmichael007/google-cloud-demo.git
 cd google-cloud-demo/MySQL2BQ
 ```
@@ -21,6 +21,7 @@ cd google-cloud-demo/MySQL2BQ
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
 ### Install MySQL 5.7 or above, enable binlog with row mode
+See the [Installation Guide][mysql installation] to install MySQL 5.7 or 8.0;
 sudo vi /etc/my.cnf, in the [mysqld] section, add the following:
 ```java
 server-id=1
@@ -29,6 +30,7 @@ binlog-format=ROW
 ```
 restart MySQL
 
+[mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
 [binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
 
