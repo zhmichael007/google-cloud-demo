@@ -14,13 +14,15 @@ sudo apt update
 sudo apt install maven git -y
 git clone https://github.com/zhmichael007/google-cloud-demo.git
 cd google-cloud-demo/MySQL2BQ
-```
-
-Modify the hostname, port, user, password in ChangeDataSender.java file
-```java
+modify the hostname, port, user, password in ChangeDataSender.java file
 mvn install
 mvn exec:java
 ```
 
 
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
+
+Create BigQuery raw data table:
+```java
+bq mk --table zhmichael1:debezium_cdc.raw_data_2 ./raw_data.json
+```
