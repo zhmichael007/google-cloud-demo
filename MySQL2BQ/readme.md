@@ -36,7 +36,7 @@ binlog-format=ROW
 ```
 restart MySQL by using systemctl. 
 Check the biglog setting in MySQL:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog.png)
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog.png) {:height="50%" width="50%"}
 
 the value for binlog_format must be set to row or ROW.  
 the value for binlog_row_image must be set to full or FULL.  
