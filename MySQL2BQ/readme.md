@@ -12,7 +12,6 @@ cd google-cloud-demo/MySQL2BQ
 mvn install
 ```
 Modify the hostname, port, user, password in ChangeDataSender.java file
-
 ```java
 mvn compile
 mvn exec:java
