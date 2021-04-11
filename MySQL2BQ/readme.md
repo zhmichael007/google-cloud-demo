@@ -24,8 +24,11 @@ bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 See the [Installation Guide][mysql installation] to install MySQL 5.7 or 8.0;
 sudo vi /etc/my.cnf, in the [mysqld] section, add the following:
 ```java
+[mysqld]
 server-id=1
+log_bin=ON
 log_bin=/var/lib/mysql/mysql-bin
+log_bin_index=/var/lib/mysql/mysql-bin.index
 binlog-format=ROW
 ```
 restart MySQL
@@ -41,3 +44,5 @@ set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java
 mvn install
 mvn exec:java
 ```
+
+
