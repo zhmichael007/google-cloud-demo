@@ -76,16 +76,16 @@ Check the raw_data table in BigQuery:
 <img src="./img/debezium_start_bq.png" width="60%">
 
 You can use a view to parse the real table from raw_data:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/view.png" width="60%">
+<img src="./img/view.png" width="60%">
 
 ### Demo2: CDC
 Execute Insert, Update and Delete operation in mysql client:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_mysql_op.png" width="60%">
+<img src="./img/cdc_mysql_op.png" width="60%">
 
 Will see the output of the Debezium application with INSERT, UPDATE and DELETE:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_app_output.png" width="60%">
+<img src="./img/cdc_app_output.png" width="60%">
 
 Check the raw_data table in BigQuery:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png" width="60%">  
+<img src="./img/cdc_bq.png" width="60%">  
 
 You need to merge the data from raw_data table to destination table according to the operation INSERT, UPDATE and DELETE 
