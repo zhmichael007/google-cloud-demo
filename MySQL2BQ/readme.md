@@ -5,7 +5,7 @@ is added in MySQL. BigQuery will work as a data lake and collect the raw data, a
 The information about Debezium please refer to: [debezium]
 
 # Architecture:
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/arch.png" width="80%">
+<img src="./img/arch.png" width="80%">
 
 # Authentication
 
@@ -39,11 +39,11 @@ binlog-format=ROW
 ```
 restart MySQL by using systemctl. 
 Check the biglog setting in MySQL:
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog.png" width="60%">
+<img src="./img/binlog.png" width="60%">
 
 the value for binlog_format must be set to row or ROW.  
 the value for binlog_row_image must be set to full or FULL.  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog2.png" width="60%">
+<img src="./img/binlog2.png" width="60%">
 
 [mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
@@ -54,8 +54,8 @@ the value for binlog_row_image must be set to full or FULL.
 modify the hostname, port, user, password in ChangeDataSender.java file
 set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java 
 ```
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code1.png" width="60%">
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code2.png" width="60%">
+<img src="./img/code1.png" width="60%">
+<img src="./img/code2.png" width="60%">
 
 
 ```
@@ -67,13 +67,13 @@ mvn exec:java
 # Demo
 ### Demo1: History Data Migration:
 There are 2 databases, named testdb1 and testdb2:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png" width="40%" height="40%">
+<img src="./img/database_info.png" width="40%" height="40%">
 
 Start the Debezium application, will see the historic data is outputed, it will be inserted to BigQuery:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png" width="60%">
+<img src="./img/debezium_start_app.png" width="60%">
 
 Check the raw_data table in BigQuery:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png" width="60%">
+<img src="./img/debezium_start_bq.png" width="60%">
 
 You can use a view to parse the real table from raw_data:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/view.png" width="60%">
