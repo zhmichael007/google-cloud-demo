@@ -12,7 +12,7 @@ See the [Authentication][authentication], you need to set Pub/Sub Publisher and 
 
 ### Create BigQuery raw data table:
 ```
-bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
+bq mk --table <project_id>:<dataset>.raw_data ./raw_data.json
 ```
 
 ### In a Google Debain VM:
