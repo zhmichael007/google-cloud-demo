@@ -33,7 +33,7 @@ binlog-format=ROW
 ```
 restart MySQL
 Check the biglog setting in MySQL:
-![image](img/binlog.png)
+![image](../img/binlog.png)
 
 [mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
