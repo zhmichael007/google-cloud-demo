@@ -26,7 +26,7 @@ cd google-cloud-demo/MySQL2BQ
 ### Install MySQL 5.7 or above, enable binlog with row mode
 See the [Installation Guide][mysql installation] to install MySQL 5.7 or 8.0;  
 sudo vi /etc/my.cnf, in the [mysqld] section, add the following:
-```java
+```
 [mysqld]
 server-id=1
 log_bin=ON
@@ -48,7 +48,7 @@ the value for binlog_row_image must be set to full or FULL.
 [debezium]: https://debezium.io/
 
 ### Modify the source code and run the application:
-```java
+```
 modify the hostname, port, user, password in ChangeDataSender.java file
 set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java 
 ```
@@ -56,7 +56,7 @@ set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code2.png)
 
 
-```java
+```
 mvn install
 mvn exec:java
 ```
