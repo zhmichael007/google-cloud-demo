@@ -1,0 +1,37 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "fullRecord",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "operation",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "primaryKey",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "timestampMs",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tableName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tableCode",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tablePart",
+    "type": "INTEGER"
+  }
+]
