@@ -21,7 +21,14 @@ cd google-cloud-demo/MySQL2BQ
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
 ### Install MySQL 5.7 or above, enable binlog with row mode
-Refer to [Setting the Replication Source Configuration][binlog] to enable binlog and set the binlog file
+sudo vi /etc/my.cnf
+In the [mysqld] section, add the following
+```java
+server-id=1
+log_bin=/var/lib/mysql/mysql-bin
+binlog-format=ROW
+```
+restart MySQL
 
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
 [binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
