@@ -36,8 +36,8 @@ restart MySQL by using systemctl.
 Check the biglog setting in MySQL:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog.png)
 
-the value for binlog_format must be set to row or ROW.
-the value for binlog_row_image must be set to full or FULL.
+the value for binlog_format must be set to row or ROW.  
+the value for binlog_row_image must be set to full or FULL.  
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog2.png)
 
 [mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
