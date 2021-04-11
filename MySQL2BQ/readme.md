@@ -18,11 +18,13 @@ modify the hostname, port, user, password in ChangeDataSender.java file
 mvn install
 mvn exec:java
 ```
-[authentication]: https://github.com/googleapis/google-cloud-java#authentication
+
 ### Create BigQuery raw data table:
 ```java
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
 ### Install MySQL 5.7 or above, enable binlog with row mode
 Refer to [Setting the Replication Source Configuration][binlog] to enable binlog and set the binlog file
+
+[authentication]: https://github.com/googleapis/google-cloud-java#authentication
 [binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
