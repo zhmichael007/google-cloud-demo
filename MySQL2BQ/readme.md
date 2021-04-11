@@ -64,10 +64,10 @@ mvn exec:java
 # Demo
 ### Demo1: History Data Migration:
 There are 2 databases, named testdb1 and testdb2:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png" width="60%">
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png" width="60%" height="60%">
 
 Start the Debezium application, will see the historic data is outputed, it will be inserted to BigQuery:  
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png" width="80%">
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png" width="60%">
 
 Check the raw_data table in BigQuery:  
 <img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png" width="60%">
