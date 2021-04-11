@@ -21,7 +21,7 @@ cd google-cloud-demo/MySQL2BQ
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
 ### Install MySQL 5.7 or above, enable binlog with row mode
-See the [Installation Guide][mysql installation] to install MySQL 5.7 or 8.0;
+See the [Installation Guide][mysql installation] to install MySQL 5.7 or 8.0;  
 sudo vi /etc/my.cnf, in the [mysqld] section, add the following:
 ```java
 [mysqld]
@@ -43,8 +43,34 @@ Check the biglog setting in MySQL:
 ```java
 modify the hostname, port, user, password in ChangeDataSender.java file
 set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java 
+```
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code1.png)
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code2.png)
+
+
+```java
 mvn install
 mvn exec:java
 ```
 
 
+# Demo
+### History Data Migration:
+There are 2 databases, named testdb1 and testdb2:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png)
+
+Start the Debezium application, will see the historic data is outputed, it will be inserted to BigQuery:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png)
+
+Check the raw_data table in BigQuery:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png)
+
+### CDC
+Execute Insert, Update and Delete operation in mysql client:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_mysql_op.png)
+
+Will see the output of the Debezium application with INSERT, UPDATE and DELETE:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_app_output.png)
+
+Check the raw_data table in BigQuery:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png)
