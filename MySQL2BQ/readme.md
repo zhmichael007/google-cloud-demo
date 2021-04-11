@@ -21,8 +21,7 @@ cd google-cloud-demo/MySQL2BQ
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
 ### Install MySQL 5.7 or above, enable binlog with row mode
-sudo vi /etc/my.cnf
-In the [mysqld] section, add the following
+sudo vi /etc/my.cnf, in the [mysqld] section, add the following
 ```java
 server-id=1
 log_bin=/var/lib/mysql/mysql-bin
