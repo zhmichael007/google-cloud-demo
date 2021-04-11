@@ -5,7 +5,7 @@ is added in MySQL. BigQuery will work as a data lake and collect the raw data, a
 
 # Authentication
 
-See the [Authentication][authentication] section in the base directory's README. You need to set Pub/Sub Publisher and BigQuery User priviledge in the Service Account. 
+See the [Authentication][authentication], you need to set Pub/Sub Publisher and BigQuery User priviledge in the Service Account. 
 
 # Installaton Steps:
 ### In a Google Debain VM:
@@ -23,3 +23,6 @@ mvn exec:java
 ```java
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
+### Install MySQL 5.7 or above, enable binlog with row mode
+Refer to [Setting the Replication Source Configuration][binlog] to enable binlog and set the binlog file
+[binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
