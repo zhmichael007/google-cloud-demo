@@ -4,13 +4,16 @@ is added in MySQL. BigQuery will work as a data lake and collect the raw data, a
 
 # Installaton Steps
 In Google Debain VM:
-```Groovy
+```java
 sudo apt update
 sudo apt install maven git -y
 git clone https://github.com/zhmichael007/google-cloud-demo.git
 cd google-cloud-demo/MySQL2BQ
 mvn install
+```
+Modify the hostname, port, user, password in ChangeDataSender.java file
+
+```java
 mvn compile
 mvn exec:java
 ```
-
