@@ -21,7 +21,7 @@ cd google-cloud-demo/MySQL2BQ
 bq mk --table zhmichael1:debezium_cdc.raw_data ./raw_data.json
 ```
 ### Install MySQL 5.7 or above, enable binlog with row mode
-sudo vi /etc/my.cnf, in the [mysqld] section, add the following
+sudo vi /etc/my.cnf, in the [mysqld] section, add the following:
 ```java
 server-id=1
 log_bin=/var/lib/mysql/mysql-bin
@@ -35,6 +35,7 @@ restart MySQL
 ### Modify the source code and run the application:
 ```java
 modify the hostname, port, user, password in ChangeDataSender.java file
+set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java 
 mvn install
 mvn exec:java
 ```
