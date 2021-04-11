@@ -14,9 +14,6 @@ sudo apt update
 sudo apt install maven git -y
 git clone https://github.com/zhmichael007/google-cloud-demo.git
 cd google-cloud-demo/MySQL2BQ
-modify the hostname, port, user, password in ChangeDataSender.java file
-mvn install
-mvn exec:java
 ```
 
 ### Create BigQuery raw data table:
@@ -28,3 +25,10 @@ Refer to [Setting the Replication Source Configuration][binlog] to enable binlog
 
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
 [binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
+
+### Modify the source code and run the application:
+```java
+modify the hostname, port, user, password in ChangeDataSender.java file
+mvn install
+mvn exec:java
+```
