@@ -2,7 +2,7 @@
 This is a solution of migration and CDC from MySQL to Google Cloud BigQuery. It is using the opensource project debezium API, support Migratino and CDC from MySQL to BigQuery.
 The customized debezium connector can work as a unified platform for history data migration and CDC, even the schema is changed or new table 
 is added in MySQL. BigQuery will work as a data lake and collect the raw data, and transfer the raw data to table by using SQL script.  
-The information about Debezium please refer to: [Debezium]
+The information about Debezium please refer to: [debezium]
 
 # Authentication
 
@@ -36,15 +36,14 @@ binlog-format=ROW
 ```
 restart MySQL by using systemctl. 
 Check the biglog setting in MySQL:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog.png) {:height="50%" width="50%"}
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog.png" width="60%">
 
 the value for binlog_format must be set to row or ROW.  
 the value for binlog_row_image must be set to full or FULL.  
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog2.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binlog2.png" width="60%">
 
 [mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
-[binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
 [debezium]: https://debezium.io/
 
 ### Modify the source code and run the application:
@@ -52,8 +51,8 @@ the value for binlog_row_image must be set to full or FULL.
 modify the hostname, port, user, password in ChangeDataSender.java file
 set ingestion_mode, projectId, datasetName, tableName in MyChangeConsumer.java 
 ```
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code1.png)
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code2.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code1.png" width="60%">
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/code2.png" width="60%">
 
 
 ```
@@ -65,25 +64,25 @@ mvn exec:java
 # Demo
 ### Demo1: History Data Migration:
 There are 2 databases, named testdb1 and testdb2:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png" width="60%">
 
 Start the Debezium application, will see the historic data is outputed, it will be inserted to BigQuery:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_app.png" width="60%">
 
 Check the raw_data table in BigQuery:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png" width="60%">
 
 You can use a view to parse the real table from raw_data:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/view.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/view.png" width="60%">
 
 ### Demo2: CDC
 Execute Insert, Update and Delete operation in mysql client:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_mysql_op.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_mysql_op.png" width="60%">
 
 Will see the output of the Debezium application with INSERT, UPDATE and DELETE:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_app_output.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_app_output.png" width="60%">
 
 Check the raw_data table in BigQuery:
-![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png)
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png" width="60%">
 
 You need to merge the data from raw_data table to destination table according to the operation INSERT, UPDATE and DELETE 
