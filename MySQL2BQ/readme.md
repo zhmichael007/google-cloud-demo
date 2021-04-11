@@ -31,7 +31,7 @@ log_bin=/var/lib/mysql/mysql-bin
 log_bin_index=/var/lib/mysql/mysql-bin.index
 binlog-format=ROW
 ```
-restart MySQL
+restart MySQL  
 Check the biglog setting in MySQL:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binglog.png)
 
