@@ -1,7 +1,8 @@
 # Descripton:
 This is a solution of migration and CDC from MySQL to Google Cloud BigQuery. It is using the opensource project debezium API, support Migratino and CDC from MySQL to BigQuery.
-The customized debezium connector can work as a unified platform for histofic data migration and new data CDC, even the schema is changed or new table 
+The customized debezium connector can work as a unified platform for history data migration and CDC, even the schema is changed or new table 
 is added in MySQL. BigQuery will work as a data lake and collect the raw data, and transfer the raw data to table by using SQL script.  
+The information about Debezium please refer to: [Debezium] [debezium]
 
 # Authentication
 
@@ -38,6 +39,7 @@ Check the biglog setting in MySQL:
 [mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
 [binlog]: https://dev.mysql.com/doc/refman/5.7/en/replication-howto-masterbaseconfig.html
+[debezium]: https://debezium.io/
 
 ### Modify the source code and run the application:
 ```java
