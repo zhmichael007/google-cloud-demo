@@ -32,9 +32,13 @@ log_bin=/var/lib/mysql/mysql-bin
 log_bin_index=/var/lib/mysql/mysql-bin.index
 binlog-format=ROW
 ```
-restart MySQL  
+restart MySQL by using systemctl. 
 Check the biglog setting in MySQL:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binglog.png)
+
+the value for binlog_format must be set to row or ROW.
+the value for binlog_row_image must be set to full or FULL.
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/binglog2.png)
 
 [mysql installation]: https://serverspace.io/support/help/how-to-install-mysql-on-debian-10/
 [authentication]: https://github.com/googleapis/google-cloud-java#authentication
