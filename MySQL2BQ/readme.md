@@ -5,7 +5,7 @@ is added in MySQL. BigQuery will work as a data lake and collect the raw data, a
 
 ### Authentication
 
-See the [Authentication][authentication] section in the base directory's README.
+See the [Authentication][authentication] section in the base directory's README. You need to set Pub/Sub Publisher and BigQuery User priviledge in the Service Account. 
 
 ### Installaton Steps:
 In a Google Debain VM:
