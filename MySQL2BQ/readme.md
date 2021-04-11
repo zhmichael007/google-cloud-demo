@@ -55,7 +55,7 @@ mvn exec:java
 
 
 # Demo
-### History Data Migration:
+### Demo1: History Data Migration:
 There are 2 databases, named testdb1 and testdb2:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/database_info.png)
 
@@ -65,7 +65,10 @@ Start the Debezium application, will see the historic data is outputed, it will 
 Check the raw_data table in BigQuery:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/debezium_start_bq.png)
 
-### CDC
+You can use a view to parse the real table from raw_data:
+![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/view.png)
+
+### Demo2: CDC
 Execute Insert, Update and Delete operation in mysql client:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_mysql_op.png)
 
@@ -74,3 +77,5 @@ Will see the output of the Debezium application with INSERT, UPDATE and DELETE:
 
 Check the raw_data table in BigQuery:
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/cdc_bq.png)
+
+You need to merge the data from raw_data table to destination table according to the operation INSERT, UPDATE and DELETE 
