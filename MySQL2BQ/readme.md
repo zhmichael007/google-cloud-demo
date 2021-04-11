@@ -5,7 +5,7 @@ is added in MySQL. BigQuery will work as a data lake and collect the raw data, a
 The information about Debezium please refer to: [debezium]
 
 # Architecture:
-<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/arch.png" width="60%">
+<img src="https://github.com/zhmichael007/google-cloud-demo/blob/master/MySQL2BQ/img/arch.png" width="80%">
 
 # Authentication
 
