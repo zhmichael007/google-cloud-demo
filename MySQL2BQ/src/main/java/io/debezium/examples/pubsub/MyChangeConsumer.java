@@ -188,7 +188,8 @@ public class MyChangeConsumer implements DebeziumEngine.ChangeConsumer<RecordCha
         }
     }
 
-    public void handleBatch(List<RecordChangeEvent<SourceRecord>> records, DebeziumEngine.RecordCommitter<RecordChangeEvent<SourceRecord>> recordCommitter)
+    public void handleBatch(List<RecordChangeEvent<SourceRecord>> records, 
+                            DebeziumEngine.RecordCommitter<RecordChangeEvent<SourceRecord>> recordCommitter)
             throws InterruptedException {
         if("pubsub" == ingestion_mode) {
             LOGGER.debug("Send data to PubSub");
