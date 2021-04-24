@@ -47,6 +47,7 @@ public class ChangeDataSender implements Runnable {
         props.setProperty("connector.class", "io.debezium.connector.mysql.MySqlConnector");
         props.setProperty("offset.storage", "org.apache.kafka.connect.storage.FileOffsetBackingStore");
         props.setProperty("offset.storage.file.filename", "/tmp/offsets.dat");
+        props.setProperty("database.history", "io.debezium.relational.history.FileDatabaseHistory");
         props.setProperty("database.history.file.filename", "/tmp/dbhistory.dat");
         props.setProperty("offset.flush.interval.ms", "1000");
         /* begin connector properties */
@@ -56,7 +57,6 @@ public class ChangeDataSender implements Runnable {
         props.setProperty("database.password", "GoogleCloudDemo123*");
         props.setProperty("database.server.id", "1");
         props.setProperty("database.server.name", "test");
-        props.setProperty("database.history", "io.debezium.relational.history.FileDatabaseHistory");
         props.setProperty("decimal.handling.mode", "string");
 
     }
