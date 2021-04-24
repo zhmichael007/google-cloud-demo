@@ -203,8 +203,5 @@ public class MyChangeConsumer implements DebeziumEngine.ChangeConsumer<RecordCha
         {
             LOGGER.error("Incorrect ingestion mode: {}", ingestion_mode);
         }
-
-
-
     }
 }
