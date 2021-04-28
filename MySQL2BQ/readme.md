@@ -88,4 +88,4 @@ Will see the output of the Debezium application with INSERT, UPDATE and DELETE:
 Check the raw_data table in BigQuery:  
 <img src="./img/cdc_bq.png" width="60%">  
 
-You need to merge the data from raw_data table to destination table according to the operation INSERT, UPDATE and DELETE 
+Then you can use the SQL script to merge the data from raw_data table to destination table according to the operation INSERT, UPDATE and DELETE 
