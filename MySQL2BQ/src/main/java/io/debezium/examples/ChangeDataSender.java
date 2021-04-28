@@ -92,7 +92,7 @@ public class ChangeDataSender implements Runnable {
     private void awaitTermination(ExecutorService executor) {
         try {
             while (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
-                LOGGER.info("Waiting another 10 seconds for the embedded engine to complete");
+                //LOGGER.info("Waiting another 10 seconds for the embedded engine to complete");
             }
         }
         catch (InterruptedException e) {
