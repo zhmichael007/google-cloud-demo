@@ -186,6 +186,17 @@ static string create_signed_url(string url, string key_name, string key_value, i
     unsigned char digest[EVP_MAX_MD_SIZE] = {'\0'};
     unsigned int digest_len = 0;
     size_t out_len = 0;
+
+    //according to https://cloud.google.com/cdn/docs/using-signed-urls, need to base64 url to common base64 convert
+    // - to +, _ to /
+    char* p_key_value=(char*)key_value.c_str();
+    for(int i=0; i<key_value.length(); i++)
+    {
+        if('-' == p_key_value[i]) p_key_value[i]='+';
+        if('_' == p_key_value[i]) p_key_value[i]='/';
+    }
+    printf("key value convert to standard base64: %s\n", key_value.c_str());
+
     unsigned char* decoded_key_value = base64_decode((unsigned char*)key_value.c_str(), key_value.length(), &out_len);
     if(decoded_key_value == NULL)
     {
@@ -211,6 +222,6 @@ static string create_signed_url(string url, string key_name, string key_value, i
 
 int main()
 {
-    std::cout << create_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<std::endl;
+    std::cout << create_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600);
     return 0;
 }
