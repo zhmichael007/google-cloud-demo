@@ -10,16 +10,23 @@ https://github.com/zhmichael007/google-cloud-demo/tree/master/cdn-sigh-url
 
 该代码在Debain下运行通过  
 
-代码中hmac-sha1的签名依赖openssl的lib实现，所以需要下载编译openssl 1.1.1的库：   
-- sudo apt-get install wget git -y
-- wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz
-- tar -zxvf openssl-1.1.1i.tar.gz
-- cd openssl-1.1.1i
-- 运行 ./config   
-- sudo make install 
+代码中hmac-sha1的签名依赖openssl的lib实现，所以需要下载编译openssl 1.1.1的库：
+```
+sudo apt-get install wget git -y
+wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz
+tar -zxvf openssl-1.1.1i.tar.gz
+cd openssl-1.1.1i
+./config   
+sudo make install 
+```
 
 在Google Cloud Load Balancing的管理控制台上，设置签名URL的key：
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/3.png)  
+
+```
+git clone https://github.com/zhmichael007/google-cloud-demo.git
+cd google-cloud-demo/cdn-sign-url-cpp
+```
 
 在sign_url.cpp中，设置自己需要签名的URL路径，设置在Google Cloud CDN中设置的签名key name和key value：
 ![image](https://github.com/zhmichael007/google-cloud-demo/blob/master/cdn-sign-url-cpp/image/1.png)  
