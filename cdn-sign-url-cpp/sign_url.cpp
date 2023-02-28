@@ -1,5 +1,5 @@
 //modify it according to your environment
-#define FILE_URL "http://34.117.201.214/1.png"
+#define FILE_URL "http://upos-sz-mirrorgcsbstar1.bilivideo.com/pogoxcodeboss/n230216ad2iztd253n7moz27w65ho5u4-64k.m4a"
 #define CDN_KEY_NAME "cdn-sign-key-1"
 #define CDN_KEY_VALUE "2jymkR0hUiasu3Kqtr1dCA=="
 
@@ -33,63 +33,63 @@ static const unsigned char url_base64_table[65] =
  * not included in out_len.
  */
 static unsigned char * base64_encode(const unsigned char *src, size_t len,
-			      size_t *out_len, bool url_encode=false)
+                              size_t *out_len, bool url_encode=false)
 {
-	unsigned char *out, *pos;
-	const unsigned char *end, *in;
-	size_t olen;
-	int line_len;
-	const unsigned char * table = url_encode ? url_base64_table:base64_table;
+        unsigned char *out, *pos;
+        const unsigned char *end, *in;
+        size_t olen;
+        int line_len;
+        const unsigned char * table = url_encode ? url_base64_table:base64_table;
     
-	olen = len * 4 / 3 + 4; /* 3-byte blocks to 4-byte */
-	olen += olen / 72; /* line feeds */
-	olen++; /* nul termination */
-	if (olen < len)
-		return NULL; /* integer overflow */
-	out = (unsigned char*)malloc(olen);
-	if (out == NULL)
-		return NULL;
+        olen = len * 4 / 3 + 4; /* 3-byte blocks to 4-byte */
+        olen += olen / 72; /* line feeds */
+        olen++; /* nul termination */
+        if (olen < len)
+                return NULL; /* integer overflow */
+        out = (unsigned char*)malloc(olen);
+        if (out == NULL)
+                return NULL;
 
-	end = src + len;
-	in = src;
-	pos = out;
-	line_len = 0;
-	while (end - in >= 3) {
-		*pos++ = table[in[0] >> 2];
-		*pos++ = table[((in[0] & 0x03) << 4) | (in[1] >> 4)];
-		*pos++ = table[((in[1] & 0x0f) << 2) | (in[2] >> 6)];
-		*pos++ = table[in[2] & 0x3f];
-		in += 3;
-		line_len += 4;
-		if (line_len >= 72) {
-			*pos++ = '\n';
-			line_len = 0;
-		}
-	}
+        end = src + len;
+        in = src;
+        pos = out;
+        line_len = 0;
+        while (end - in >= 3) {
+                *pos++ = table[in[0] >> 2];
+                *pos++ = table[((in[0] & 0x03) << 4) | (in[1] >> 4)];
+                *pos++ = table[((in[1] & 0x0f) << 2) | (in[2] >> 6)];
+                *pos++ = table[in[2] & 0x3f];
+                in += 3;
+                line_len += 4;
+                if (line_len >= 72) {
+                        //*pos++ = '\n';
+                        line_len = 0;
+                }
+        }
 
-	if (end - in) {
-		*pos++ = table[in[0] >> 2];
-		if (end - in == 1) {
-			*pos++ = table[(in[0] & 0x03) << 4];
-			*pos++ = '=';
-		} else {
-			*pos++ = table[((in[0] & 0x03) << 4) |
-					      (in[1] >> 4)];
-			*pos++ = table[(in[1] & 0x0f) << 2];
-		}
-		*pos++ = '=';
-		line_len += 4;
-	}
+        if (end - in) {
+                *pos++ = table[in[0] >> 2];
+                if (end - in == 1) {
+                        *pos++ = table[(in[0] & 0x03) << 4];
+                        *pos++ = '=';
+                } else {
+                        *pos++ = table[((in[0] & 0x03) << 4) |
+                                              (in[1] >> 4)];
+                        *pos++ = table[(in[1] & 0x0f) << 2];
+                }
+                *pos++ = '=';
+                line_len += 4;
+        }
 
-	if (line_len)
-		*pos++ = '\n';
+        //if (line_len)
+                //*pos++ = '\n';
+		
 
-	*pos = '\0';
-	if (out_len)
-		*out_len = pos - out;
-	return out;
+        *pos = '\0';
+        if (out_len)
+                *out_len = pos - out;
+        return out;
 }
-
 
 /**
  * base64_decode - Base64 decode
@@ -161,7 +161,6 @@ static unsigned char * base64_decode(const unsigned char *src, size_t len,
 	return out;
 }
 
-//duration : int: seconds
 /**
  * create_signed_url - sign url
  * @url: url to be signed
@@ -213,15 +212,87 @@ static string create_signed_url(string url, string key_name, string key_value, i
         cout << "base64 encode digest failed" <<endl;
         return "";
     }
-    printf("base64 url encoded digest: %s", base64_url_encoded_digest);
+    printf("base64 url encoded digest: %s\n", base64_url_encoded_digest);
     string str_encoded_digest = (char*)base64_url_encoded_digest;
     free(base64_url_encoded_digest);
 
     return url_to_sign+"&Signature="+str_encoded_digest;
 }
 
+string url_encode(char * url)
+{
+    size_t out_len = 0;
+    char* encoded = (char*) base64_encode((unsigned char*)url, strlen(url), &out_len, true);
+    string str = encoded;
+    free(encoded);
+    //cout << "URLPrefix base64: "<<encoded;
+    return str;
+}
+
+//duration : int: seconds
+/**
+ * create_url_prefix_signed_url - sign url with prefix URL
+ * @url: url to be signed
+ * @key_name: key name set in the Google Cloud CDN
+ * @key_value: key value of the key_name in Google Cloud CDN
+ * @duration: expire time of this signature, unit is second
+ * Returns: A signed url with this format: https://example.com/foo?Expires=EXPIRATION&KeyName=KEY_NAME&Signature=SIGNATURE
+ * or empty string on failure
+ *
+ */
+static string create_url_prefix_signed_url(string url, string key_name, string key_value, int duration=3600)
+{
+    time_t now = time(0);
+    time_t expire_time = now + duration;
+    cout<<"current time: "<<now<<", expiration time: "<<expire_time<<endl;
+
+    string url_to_sign = "URLPrefix="+url_encode((char*)url.c_str()) + "&Expires=" + std::to_string(1677141017) + "&KeyName=" + key_name;
+
+    cout<< "url to sign: "<<url_to_sign<<endl;
+
+    //hmac-sha1
+    unsigned char digest[EVP_MAX_MD_SIZE] = {'\0'};
+    unsigned int digest_len = 0;
+    size_t out_len = 0;
+
+    //according to https://cloud.google.com/cdn/docs/using-signed-urls, need to base64 url to common base64 convert
+    // - to +, _ to /
+    char* p_key_value=(char*)key_value.c_str();
+    for(int i=0; i<key_value.length(); i++)
+    {
+        if('-' == p_key_value[i]) p_key_value[i]='+';
+        if('_' == p_key_value[i]) p_key_value[i]='/';
+    }
+    printf("key value convert to standard base64: %s\n", key_value.c_str());
+
+    unsigned char* decoded_key_value = base64_decode((unsigned char*)key_value.c_str(), key_value.length(), &out_len);
+    if(decoded_key_value == NULL)
+    {
+        cout << "malformed base64 key value"<<endl;
+        return "";
+    }
+    HMAC(EVP_sha1(), decoded_key_value, out_len, (const unsigned char*)url_to_sign.c_str(), url_to_sign.length(), digest, &digest_len);
+    free(decoded_key_value);
+
+    //url base64 encode for digest
+    unsigned char* base64_url_encoded_digest = base64_encode((unsigned char*)digest, digest_len, &out_len, true);
+    if(NULL == base64_url_encoded_digest)
+    {
+        cout << "base64 encode digest failed" <<endl;
+        return "";
+    }
+    printf("base64 url encoded digest: %s\n", base64_url_encoded_digest);
+    string str_encoded_digest = (char*)base64_url_encoded_digest;
+    free(base64_url_encoded_digest);
+
+    return url+"?"+url_to_sign+"&Signature="+str_encoded_digest;
+}
+
 int main()
 {
-    std::cout << create_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600);
+    cout << "*************************sign whole url************************************" <<endl;
+    std::cout << create_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<endl<<endl;
+    cout << "*************************sign url with prefix******************************" <<endl;
+    std::cout << create_url_prefix_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<endl;
     return 0;
 }
