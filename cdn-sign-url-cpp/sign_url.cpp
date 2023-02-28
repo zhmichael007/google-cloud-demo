@@ -229,14 +229,13 @@ string url_encode(char * url)
     return str;
 }
 
-//duration : int: seconds
 /**
  * create_url_prefix_signed_url - sign url with prefix URL
  * @url: url to be signed
  * @key_name: key name set in the Google Cloud CDN
  * @key_value: key value of the key_name in Google Cloud CDN
  * @duration: expire time of this signature, unit is second
- * Returns: A signed url with this format: https://example.com/foo?Expires=EXPIRATION&KeyName=KEY_NAME&Signature=SIGNATURE
+ * Returns: A signed url with this format: https://media.example.com/videos/id/master.m3u8?userID=abc123&starting_profile=1&URLPrefix=aHR0cHM6Ly9tZWRpYS5leGFtcGxlLmNvbS92aWRlb3Mv&Expires=1566268009&KeyName=mySigningKey&Signature=8NBSdQGzvDftrOIa3WHpp646Iis=
  * or empty string on failure
  *
  */
