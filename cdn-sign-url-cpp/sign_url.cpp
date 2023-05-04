@@ -1,7 +1,8 @@
 //modify it according to your environment
-#define FILE_URL "http://upos-sz-mirrorgcsbstar1.bilivideo.com/pogoxcodeboss/n230216ad2iztd253n7moz27w65ho5u4-64k.m4a"
+#define FULL_URL "https://media.example.com/videos/id/master.m3u8?userID=abc123&starting_profile=1"
+#define PREFIX_URL "https://media.example.com/videos/id/master.m3u8"
 #define CDN_KEY_NAME "cdn-sign-key-1"
-#define CDN_KEY_VALUE "2jymkR0hUiasu3Kqtr1dCA=="
+#define CDN_KEY_VALUE "k7BDnWP-KXYhX1_pcdl65g=="
 
 #include <iostream>
 #include <string>
@@ -245,7 +246,7 @@ static string create_url_prefix_signed_url(string url, string key_name, string k
     time_t expire_time = now + duration;
     cout<<"current time: "<<now<<", expiration time: "<<expire_time<<endl;
 
-    string url_to_sign = "URLPrefix="+url_encode((char*)url.c_str()) + "&Expires=" + std::to_string(1677141017) + "&KeyName=" + key_name;
+    string url_to_sign = "URLPrefix="+url_encode((char*)url.c_str()) + "&Expires=" + std::to_string(expire_time) + "&KeyName=" + key_name;
 
     cout<< "url to sign: "<<url_to_sign<<endl;
 
@@ -289,9 +290,9 @@ static string create_url_prefix_signed_url(string url, string key_name, string k
 
 int main()
 {
-    cout << "*************************sign whole url************************************" <<endl;
-    std::cout << create_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<endl<<endl;
+    cout << "*************************sign full url************************************" <<endl;
+    std::cout << create_signed_url(FULL_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<endl<<endl;
     cout << "*************************sign url with prefix******************************" <<endl;
-    std::cout << create_url_prefix_signed_url(FILE_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<endl;
+    std::cout << create_url_prefix_signed_url(PREFIX_URL, CDN_KEY_NAME, CDN_KEY_VALUE, 3600)<<endl;
     return 0;
 }
