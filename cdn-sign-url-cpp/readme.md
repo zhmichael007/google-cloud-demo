@@ -12,7 +12,7 @@ https://github.com/zhmichael007/google-cloud-demo/tree/master/cdn-sigh-url
 
 代码中hmac-sha1的签名依赖openssl的lib实现，所以需要下载编译openssl 1.1.1的库：
 ```
-sudo apt-get install wget git make gcc -y
+sudo apt-get install wget git make gcc g++ -y
 wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz
 tar -zxvf openssl-1.1.1i.tar.gz
 cd openssl-1.1.1i
