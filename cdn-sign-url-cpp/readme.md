@@ -8,7 +8,7 @@ https://github.com/zhmichael007/google-cloud-demo/tree/master/cdn-sigh-url
 - 注意：该代码为C++实现的Google Cloud CDN 签名URL的prototype，个人兴趣开发，不保证没有问题。生产场景使用之前请严格测试！
 ```
 
-该代码在Debain下运行通过  
+该代码在Debian下运行通过  
 
 代码中hmac-sha1的签名依赖openssl的lib实现，所以需要下载编译openssl 1.1.1的库：
 ```
