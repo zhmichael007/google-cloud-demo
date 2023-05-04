@@ -20,7 +20,7 @@ cd openssl-1.1.1i
 sudo make install 
 ```
 
-在Google Cloud Load Balancing的管理控制台上，设置签名URL的key：
+在Google Cloud Load Balancing的管理控制台上，添加一个sign key：
 ![image](./image/1.png){:height="50%" width="50%"}
 
 ```
